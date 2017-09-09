@@ -11,11 +11,39 @@
     margin: 45px 0 20px 0;
     width: 100%;
     display: flex;
-    align-items: flex-end; }
+    align-items: flex-end;
+    position: relative; }
   .header__title {
     text-transform: uppercase;
     font-size: 2.4rem;
-    font-weight: 600; }
+    font-weight: 700; }
+    .header__title::after {
+      font-family: FontAwesome;
+      content: '\f055';
+      margin-left: 25px;
+      color: #0266b3; }
+  .header__title-icon {
+    height: 38px;
+    width: 38px;
+    border: 1px solid #bcbdc0;
+    border-radius: 50%;
+    position: absolute;
+    left: -130px;
+    top: -7px; }
+    .header__title-icon::before, .header__title-icon::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 1px;
+      transform: rotate(40deg);
+      background: #bcbdc0; }
+    .header__title-icon::after {
+      transform: rotate(-40deg);
+      top: 33%;
+      left: 26%; }
+    .header__title-icon::before {
+      top: 62%;
+      left: 26%; }
   .header__search-form {
     display: flex;
     justify-content: space-between; }
