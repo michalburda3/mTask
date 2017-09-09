@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=latin-ext");
 h1 {
-  color: red; }
+  color: blue; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h2 {
+  color: black; }
+
 /*# sourceMappingURL=style.css.map */

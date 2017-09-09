@@ -1,1 +1,11 @@
-{"version":3,"sources":["../scss/style.scss"],"names":[],"mappings":"AAAA;EACE,WAAU,EACX","file":"style.css"}
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/vars.scss",
+		"../scss/allQuestions.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,OAAO,CAAC,sHAAI;AEAZ,AAAA,EAAE,CAAC;EACD,KAAK,EDDM,IAAI,GCEhB;;AFED,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,uBAAuB,GACrC;;AACA,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,KAAK,GACb"
+}

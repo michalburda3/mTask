@@ -1,7 +1,7 @@
 {
-  "name": "homepage",
+  "name": "Monterail task",
   "version": "1.0.0",
-  "description": "My portfolio homepage",
+  "description": "Monterail task",
   "main": "gruntfile.js",
   "scripts": {
     "test": "test"
