@@ -74,13 +74,111 @@
 
 .question__list {
   background-color: #fbfbfb;
-  border-right: 30px solid #ffe1ad; }
+  border-right: 37px solid #ffe1ad;
+  border-left: 37px solid #ffe1ad;
+  border-bottom: 55px solid #ffe1ad;
+  display: flex;
+  justify-content: center; }
+
+.question__wrapper {
+  display: flex;
+  width: 760px;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e8e8e8; }
+
+.question__content {
+  display: flex;
+  flex-direction: column;
+  width: 75%; }
+
+.question__aside-wrapper {
+  width: 22%; }
+
+.question__body {
+  display: flex; }
+
+.question__body-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 20px; }
+
+.question__body-item {
+  width: 85px;
+  height: 146px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px 5px 0 5px; }
+  .question__body-item:first-of-type {
+    height: 176px;
+    margin: 0 5px 0 0;
+    background-color: #dff3fd;
+    justify-content: flex-end; }
+
+.question__body-info {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #667791;
+  position: relative; }
+  .question__body-info::before {
+    content: '';
+    width: 66px;
+    height: 1px;
+    background-color: #667791;
+    position: absolute;
+    top: 0;
+    left: 10px; }
+  .question__body-info::after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #667791;
+    bottom: -4.5px;
+    left: calc(50% - 4.5px); }
+
+.question__header-wrapper {
+  display: flex;
+  background-color: #dff3fd; }
+
+.question__header-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 20px; }
+
+.question__header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #0063b1; }
+
+.question__user-name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600; }
+
+.question__header-ask {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: #667791; }
+
+.question__phrase {
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 600; }
 
 html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fbfbfb; }
 
 * {
   box-sizing: border-box; }
