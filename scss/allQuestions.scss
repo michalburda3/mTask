@@ -97,8 +97,9 @@
     border-right: 37px solid #ffe1ad;
     border-left: 37px solid #ffe1ad;
     border-bottom: 55px solid #ffe1ad;
-    display: flex;
-    justify-content: center;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
   }
   &__wrapper {
     display: flex;
@@ -106,23 +107,28 @@
     justify-content: space-between;
     padding-bottom: 40px;
     border-bottom: 1px solid #e8e8e8;
+    margin: 0 auto;
+    &:last-of-type {
+      .question__body {
+        justify-content: flex-start;
+      }
+    }
   }
   &__content {
     display: flex;
     flex-direction: column;
     width: 75%;
   }
-  &__aside-wrapper {
-    width: 22%;
-  }
+  //body
   &__body {
     display: flex;
+    justify-content: space-between;
   }
   &__body-avatar {
-    width: 50px;
-    height: 50px;
+    width: 49px;
+    height: 49px;
     border-radius: 50%;
-    margin: 20px;
+    margin: 18px;
   }
   &__body-item {
     width: 85px;
@@ -131,11 +137,23 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 30px 5px 0 5px;
+    background-color: $color-background-li-item;
     &:first-of-type {
       height: 176px;
       margin: 0 5px 0 0;
       background-color: $color-background-light-blue;
       justify-content: flex-end;
+    }
+    &:last-of-type {
+      margin-right: 0;
+      .question__body-info {
+        &::before {
+          background-color: #3d3c3e;
+        }
+        &::after {
+          background-color: black;
+        }
+      }
     }
   }
   &__body-info {
@@ -145,6 +163,7 @@
     text-transform: uppercase;
     color: $color-text-grey;
     position: relative;
+    font-size: 0.9rem;
 
     &::before {
       content: '';
@@ -191,10 +210,70 @@
     text-transform: uppercase;
     font-size: 1.1rem;
     color: $color-text-grey;
+    padding-left: 5px;
   }
   &__phrase {
     font-style: italic;
     font-size: 1.4rem;
     font-weight: 600;
   }
+  &__body-item--more {
+    @extend .question__body-item;
+    background-color: inherit;
+  }
+
+  &__body-avatar--more {
+    @extend .question__body-avatar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #536161;
+  }
+  &__body-info--more {
+    @extend .question__body-info;
+    text-transform: lowercase;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 600;
+    padding-bottom: 15px;
+    color: #536161;
+    &::before {
+      content: none;
+    }
+  }
+
+  // aside
+
+  &__aside-wrapper {
+    width: 22%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  &__aside {
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__aside-item {
+    display: flex;
+    padding-left: 35px;
+
+  }
+  &__aside-phrase {
+    @extend .question__body-info--more;
+    padding: 0;
+    &::after {
+      content: none;
+    }
+  }
+  &__aside-number {
+    font-style: normal;
+    padding-right: 5px;
+  }
+
+
 }
