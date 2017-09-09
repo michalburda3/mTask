@@ -1,11 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=latin-ext");
-h1 {
-  color: blue; }
+.header {
+  display: flex;
+  height: 150px;
+  justify-content: center; }
+  .header__wrapper {
+    width: 760px;
+    display: flex;
+    flex-direction: column; }
+  .header__menu-wrapper {
+    width: 100%;
+    background: red; }
 
 html {
   font-size: 62.5%; }
 
 body {
   font-family: 'Open Sans', sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+.page__container {
+  max-width: 1210px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

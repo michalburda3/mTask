@@ -1,3 +1,18 @@
-h1 {
-  color: $color-test;
+.header {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+
+  &__wrapper {
+    width: 760px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__menu-wrapper {
+    width: 100%;
+    background: red;
+  }
+  &__title {
+
+  }
 }

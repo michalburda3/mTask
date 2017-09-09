@@ -11,7 +11,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-    <h1>siema</h1>
+    <div class="page__container">
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__menu-wrapper">
+                    <h1 class="header__title">Questions</h1>
+                    <button class="header__add"></button>
+                    <label for="myShelf">My shelf</label>
+                    <input type="radio" id="myShelf" name="view" value="myShelf">
+                    <label for="allQuestions">All Questions</label>
+                    <input type="radio" id="allQuestions" name="view" value="allQuestions">
+                </div>
+                <div class="header__search-wrapper">
+                    <form action="" class="header__search-form">
+                        <input type="text" class="header__search-box">
+                        <button class="header__submit">Search</button>
+                    </form>
+                    <div class="header__sort-wrapper">
+                        <span class="header__sort">Sort by:</span>
+                        <a href="" class="header__sort-link">recent</a>
+                        <span class="header__sort">or</span>
+                        <a href="" class="header__sort-link">hot</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
 
 
     <script type="text/javascript" src="scripts/script.js"></script>
