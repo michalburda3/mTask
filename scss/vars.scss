@@ -1,1 +1,23 @@
 $color-test: blue;
+
+
+//media queries
+//$mq-xs: 670x;
+//$mq-desktop: 992px;
+
+//mixins
+@mixin media($min: false, $max: false) {
+  @if $min {
+	@media screen and (min-width: $min){
+	  @content;
+	}
+  } @else if $max {
+    @media screen and (max-width: $max) {
+      @content;
+    }
+  } @else if $min && $max {
+    @media screen and (min-width: $min) and (max-width: $max){
+	@content;
+    }
+  }
+}

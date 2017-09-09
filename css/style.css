@@ -2,10 +2,10 @@
 h1 {
   color: blue; }
 
+html {
+  font-size: 62.5%; }
+
 body {
   font-family: 'Open Sans', sans-serif; }
-
-h2 {
-  color: black; }
 
 /*# sourceMappingURL=style.css.map */
